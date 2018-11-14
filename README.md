@@ -13,7 +13,7 @@ npm start
 ```
 ### 使用VSCode Debug
 在VSCode Debug功能下的`launch.json`配置如下:
-```json
+```
 {
     // Use IntelliSense to learn about possible attributes.
     // Hover to view descriptions of existing attributes.
