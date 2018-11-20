@@ -2,7 +2,6 @@ const WebSocket = require('ws');
 const uuidv4 = require('uuid/v4');
 
 const ApplicationInfo = require('../data/applicationInfo');
-const WsUntils = require('./wsUtils');
 
 const noop = () => { };
 
