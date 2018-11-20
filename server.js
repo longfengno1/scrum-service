@@ -8,13 +8,14 @@ const resolve = file => path.resolve(__dirname, file);
 
 const app = new Koa();
 
-// 开启webscoket
-ws();
 // 将请求体转换为 JSON 的中间件
 app.use(bodyParser());
 // 路由处理
 router(app)
 
-app.listen(8080, () => {
+const server = app.listen(9000, () => {
     console.log('application start');
 });
+
+// 开启webscoket
+ws(server);
